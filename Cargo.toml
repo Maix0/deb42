@@ -1,0 +1,23 @@
+[package]
+name = "deb42"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.4.18", features = ["derive"] }
+color-eyre = "0.6.2"
+debian-packaging = "0.17.0"
+directories = "5.0.1"
+eyre = "0.6.11"
+fd-lock = "4.0.2"
+fern = { version = "0.6.2", features = [] }
+figment = { version = "0.10.14", features = ["toml"] }
+log = "0.4.20"
+once_cell = "1.19.0"
+owo-colors = "4.0.0"
+patchelf = "0.2.1"
+serde = { version = "1.0.195", features = ["derive"] }
+sqlx = { version = "0.7.3", features = ["sqlite", "time", "runtime-tokio"] }
+tokio = { version = "1.35.1", features = ["macros", "full"] }
